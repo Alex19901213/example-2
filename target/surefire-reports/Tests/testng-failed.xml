@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Tests]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="classes" name="CRM(failed)" verbose="0">
+    <parameter name="driverName" value="Chrome"/>
+    <classes>
+      <class name="CRM.Test.FormsTest">
+        <methods>
+          <include name="OrderFiltrationInBankruptcyAll"/>
+          <include name="PrimaryOrderFiltrationInAllOrders"/>
+          <include name="FillingTheNotices"/>
+          <include name="BankruptcyForm"/>
+          <include name="BankruptcyPayments"/>
+          <include name="driverStart"/>
+          <include name="set_Up"/>
+          <include name="PrimaryForm"/>
+          <include name="driverQuit"/>
+          <include name="BankruptcyOrderFiltrationInAllOrders"/>
+          <include name="OrderFiltrationInPrimary"/>
+        </methods>
+      </class> <!-- CRM.Test.FormsTest -->
+    </classes>
+  </test> <!-- CRM(failed) -->
+</suite> <!-- Failed suite [Tests] -->

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="6" failed="8" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-24T09:23:06 EET" name="Tests" finished-at="2021-11-24T09:24:35 EET" duration-ms="89074">
+    <groups>
+    </groups>
+    <test started-at="2021-11-24T09:23:06 EET" name="LK" finished-at="2021-11-24T09:23:06 EET" duration-ms="37">
+    </test> <!-- LK -->
+    <test started-at="2021-11-24T09:23:06 EET" name="CRM" finished-at="2021-11-24T09:24:35 EET" duration-ms="88759">
+      <class name="CRM.Test.FormsTest">
+        <test-method is-config="true" signature="driverStart(java.lang.String)[pri:0, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:23:06 EET" name="driverStart" finished-at="2021-11-24T09:23:12 EET" duration-ms="5747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverStart -->
+        <test-method is-config="true" signature="set_Up()[pri:0, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:23:12 EET" name="set_Up" finished-at="2021-11-24T09:23:12 EET" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set_Up -->
+        <test-method signature="PreConditions()[pri:0, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:23:12 EET" name="PreConditions" finished-at="2021-11-24T09:23:22 EET" duration-ms="10047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreConditions -->
+        <test-method signature="OrderForm()[pri:1, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:23:22 EET" name="OrderForm" description="Создание Ордера" finished-at="2021-11-24T09:23:30 EET" duration-ms="8383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderForm -->
+        <test-method signature="PrimaryTask()[pri:2, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:23:30 EET" name="PrimaryTask" description="Наполнение данными" finished-at="2021-11-24T09:23:38 EET" duration-ms="7515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrimaryTask -->
+        <test-method signature="PrimaryForm()[pri:3, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:23:38 EET" name="PrimaryForm" description="Наполнение данными" finished-at="2021-11-24T09:23:40 EET" duration-ms="2358" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <select _ngcontent-pie-c7="" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="company_id" ng-reflect-name="company_id" ng-reflect-model="0">...</select> is not clickable at point (1081, 410). Other element would receive the click: <textarea _ngcontent-pie-c33="" formcontrolname="resolved_comment" placeholder="При завершении задачи заполните завершающий комментарий" rows="2" style="resize: vertical;" ng-reflect-name="resolved_comment" class="form-control ng-valid ng-dirty ng-touched" ng-reflect-model="ОК"></textarea>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=e4a610c9-7d3c-4aad-8aa6-ba8754b18393}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .col-md-8 select.form-control]
+Session ID: cbd65403cef9b11c15029e318a08a739]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select _ngcontent-pie-c7="" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="company_id" ng-reflect-name="company_id" ng-reflect-model="0">...</select> is not clickable at point (1081, 410). Other element would receive the click: <textarea _ngcontent-pie-c33="" formcontrolname="resolved_comment" placeholder="При завершении задачи заполните завершающий комментарий" rows="2" style="resize: vertical;" ng-reflect-name="resolved_comment" class="form-control ng-valid ng-dirty ng-touched" ng-reflect-model="ОК"></textarea>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=e4a610c9-7d3c-4aad-8aa6-ba8754b18393}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .col-md-8 select.form-control]
+Session ID: cbd65403cef9b11c15029e318a08a739
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at Pages.Page.clickOn(Page.java:44)
+at Pages.CRM.Test.Forms.Primary.clickOnDropdownAndSelectVar(Primary.java:136)
+at CRM.Test.FormsTest.PrimaryForm(FormsTest.java:129)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrimaryForm -->
+        <test-method signature="OrderFiltrationInPrimary()[pri:4, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:23:40 EET" name="OrderFiltrationInPrimary" description="Фильтрация в первичке" finished-at="2021-11-24T09:23:48 EET" duration-ms="7615" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at CRM.Test.FormsTest.OrderFiltrationInPrimary(FormsTest.java:177)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderFiltrationInPrimary -->
+        <test-method signature="PrimaryOrderFiltrationInAllOrders()[pri:5, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:23:48 EET" name="PrimaryOrderFiltrationInAllOrders" description="Фильтрация ордера во всех заказах" finished-at="2021-11-24T09:23:56 EET" duration-ms="8369" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at CRM.Test.FormsTest.PrimaryOrderFiltrationInAllOrders(FormsTest.java:193)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrimaryOrderFiltrationInAllOrders -->
+        <test-method signature="MigrateToBankruptcy()[pri:6, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:23:56 EET" name="MigrateToBankruptcy" description="Копирование ордера в банкротство" finished-at="2021-11-24T09:24:01 EET" duration-ms="4533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MigrateToBankruptcy -->
+        <test-method signature="BankruptcyTask()[pri:7, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:24:01 EET" name="BankruptcyTask" description="Дозаполнение данных в банкростве" finished-at="2021-11-24T09:24:09 EET" duration-ms="8572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BankruptcyTask -->
+        <test-method signature="BankruptcyForm()[pri:8, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:24:09 EET" name="BankruptcyForm" description="Дозаполнение данных в банкростве" finished-at="2021-11-24T09:24:11 EET" duration-ms="1195" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a _ngcontent-lax-c8="" class="nav-link" href="javascript:void(0);" id="">...</a> is not clickable at point (1173, 116). Other element would receive the click: <span class="ng-star-inserted">...</span>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=5f81c866-f25e-4a70-9395-9defa69d4734}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .nav .nav-link]
+Session ID: cbd65403cef9b11c15029e318a08a739]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-lax-c8="" class="nav-link" href="javascript:void(0);" id="">...</a> is not clickable at point (1173, 116). Other element would receive the click: <span class="ng-star-inserted">...</span>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=5f81c866-f25e-4a70-9395-9defa69d4734}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .nav .nav-link]
+Session ID: cbd65403cef9b11c15029e318a08a739
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at Pages.Page.clickOn(Page.java:44)
+at Pages.CRM.Test.Forms.Bankruptcy.swithNavigationTabTo(Bankruptcy.java:80)
+at CRM.Test.FormsTest.BankruptcyForm(FormsTest.java:244)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BankruptcyForm -->
+        <test-method signature="BankruptcyPayments()[pri:9, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:24:11 EET" name="BankruptcyPayments" description="Формирование графика платежей" finished-at="2021-11-24T09:24:12 EET" duration-ms="1466" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <li _ngcontent-lax-c6="" class="list-group-item d-flex justify-content-between align-items-center ng-star-inserted" data-action="payments">...</li> is not clickable at point (527, 593). Other element would receive the click: <modal-container class="modal fade show" role="dialog" tabindex="-1" style="display: block;" aria-modal="true">...</modal-container>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=3c12dfdb-0e3a-4197-8262-7025b86b6b93}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .list-group-item]
+Session ID: cbd65403cef9b11c15029e318a08a739]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li _ngcontent-lax-c6="" class="list-group-item d-flex justify-content-between align-items-center ng-star-inserted" data-action="payments">...</li> is not clickable at point (527, 593). Other element would receive the click: <modal-container class="modal fade show" role="dialog" tabindex="-1" style="display: block;" aria-modal="true">...</modal-container>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=3c12dfdb-0e3a-4197-8262-7025b86b6b93}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .list-group-item]
+Session ID: cbd65403cef9b11c15029e318a08a739
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at Pages.Page.clickOn(Page.java:44)
+at Pages.CRM.Test.Forms.Bankruptcy.switchDownNavigationTabTo(Bankruptcy.java:152)
+at CRM.Test.FormsTest.BankruptcyPayments(FormsTest.java:277)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BankruptcyPayments -->
+        <test-method signature="FillingTheNotices()[pri:10, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:24:12 EET" name="FillingTheNotices" description="Заполнение примечаний" finished-at="2021-11-24T09:24:13 EET" duration-ms="1306" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <li _ngcontent-lax-c6="" class="list-group-item d-flex justify-content-between align-items-center ng-star-inserted" data-action="notices">...</li> is not clickable at point (527, 691). Other element would receive the click: <modal-container class="modal fade show" role="dialog" tabindex="-1" style="display: block;" aria-modal="true">...</modal-container>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=e2cb2591-df31-45d5-b544-fa7c1eb1563e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .list-group-item]
+Session ID: cbd65403cef9b11c15029e318a08a739]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li _ngcontent-lax-c6="" class="list-group-item d-flex justify-content-between align-items-center ng-star-inserted" data-action="notices">...</li> is not clickable at point (527, 691). Other element would receive the click: <modal-container class="modal fade show" role="dialog" tabindex="-1" style="display: block;" aria-modal="true">...</modal-container>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=e2cb2591-df31-45d5-b544-fa7c1eb1563e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .list-group-item]
+Session ID: cbd65403cef9b11c15029e318a08a739
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at Pages.Page.clickOn(Page.java:44)
+at Pages.CRM.Test.Forms.Bankruptcy.switchDownNavigationTabTo(Bankruptcy.java:152)
+at CRM.Test.FormsTest.FillingTheNotices(FormsTest.java:289)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillingTheNotices -->
+        <test-method signature="OrderFiltrationInBankruptcyAll()[pri:11, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:24:13 EET" name="OrderFiltrationInBankruptcyAll" description="Поиск и фильтрация ордера в банкростве" finished-at="2021-11-24T09:24:21 EET" duration-ms="7131" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at CRM.Test.FormsTest.OrderFiltrationInBankruptcyAll(FormsTest.java:309)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderFiltrationInBankruptcyAll -->
+        <test-method signature="BankruptcyOrderFiltrationInAllOrders()[pri:12, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:24:21 EET" name="BankruptcyOrderFiltrationInAllOrders" description="Поиск и фильтрация ордера во всех заказах" finished-at="2021-11-24T09:24:30 EET" duration-ms="9597" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at CRM.Test.FormsTest.BankruptcyOrderFiltrationInAllOrders(FormsTest.java:326)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BankruptcyOrderFiltrationInAllOrders -->
+        <test-method signature="MigrateToArbitration()[pri:13, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:24:30 EET" name="MigrateToArbitration" description="Копирование ордера в арбитраж" finished-at="2021-11-24T09:24:34 EET" duration-ms="4129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MigrateToArbitration -->
+        <test-method is-config="true" signature="driverQuit()[pri:0, instance:CRM.Test.FormsTest@b18c4]" started-at="2021-11-24T09:24:34 EET" name="driverQuit" finished-at="2021-11-24T09:24:35 EET" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- CRM.Test.FormsTest -->
+    </test> <!-- CRM -->
+  </suite> <!-- Tests -->
+</testng-results>

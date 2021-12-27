@@ -1,0 +1,16 @@
+Pages\CRM\Test\Forms\BankruptcyTask.class
+Tools\YamlReader.class
+Pages\CRM\Test\Dashboard.class
+Pages\CRM\Test\Forms\PrimaryConsultation.class
+Tools\User.class
+Pages\Page.class
+Pages\CRM\Test\Forms\Primary.class
+Pages\CRM\Test\BankruptcyAll.class
+Pages\CRM\Test\PrimaryAll.class
+Pages\CRM\Test\Forms\Bankruptcy.class
+Pages\LK\Test\Login.class
+Pages\CRM\Test\AllOrders.class
+Pages\CRM\Test\Login.class
+Pages\CRM\Test\Forms\Order.class
+Pages\CRM\Test\Forms\PrimaryTask.class
+Pages\LK\Test\MyProfile.class

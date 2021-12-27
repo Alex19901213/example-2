@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 92.188 s <<< FAILURE! - in TestSuite
+PrimaryForm(CRM.Test.FormsTest)  Time elapsed: 2.378 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <select _ngcontent-pie-c7="" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="company_id" ng-reflect-name="company_id" ng-reflect-model="0">...</select> is not clickable at point (1081, 410). Other element would receive the click: <textarea _ngcontent-pie-c33="" formcontrolname="resolved_comment" placeholder="При завершении задачи заполните завершающий комментарий" rows="2" style="resize: vertical;" ng-reflect-name="resolved_comment" class="form-control ng-valid ng-dirty ng-touched" ng-reflect-model="ОК"></textarea>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=e4a610c9-7d3c-4aad-8aa6-ba8754b18393}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .col-md-8 select.form-control]
+Session ID: cbd65403cef9b11c15029e318a08a739
+	at CRM.Test.FormsTest.PrimaryForm(FormsTest.java:129)
+
+OrderFiltrationInPrimary(CRM.Test.FormsTest)  Time elapsed: 7.612 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at CRM.Test.FormsTest.OrderFiltrationInPrimary(FormsTest.java:177)
+
+PrimaryOrderFiltrationInAllOrders(CRM.Test.FormsTest)  Time elapsed: 8.367 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at CRM.Test.FormsTest.PrimaryOrderFiltrationInAllOrders(FormsTest.java:193)
+
+BankruptcyForm(CRM.Test.FormsTest)  Time elapsed: 1.197 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a _ngcontent-lax-c8="" class="nav-link" href="javascript:void(0);" id="">...</a> is not clickable at point (1173, 116). Other element would receive the click: <span class="ng-star-inserted">...</span>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=5f81c866-f25e-4a70-9395-9defa69d4734}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .nav .nav-link]
+Session ID: cbd65403cef9b11c15029e318a08a739
+	at CRM.Test.FormsTest.BankruptcyForm(FormsTest.java:244)
+
+BankruptcyPayments(CRM.Test.FormsTest)  Time elapsed: 1.473 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li _ngcontent-lax-c6="" class="list-group-item d-flex justify-content-between align-items-center ng-star-inserted" data-action="payments">...</li> is not clickable at point (527, 593). Other element would receive the click: <modal-container class="modal fade show" role="dialog" tabindex="-1" style="display: block;" aria-modal="true">...</modal-container>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=3c12dfdb-0e3a-4197-8262-7025b86b6b93}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .list-group-item]
+Session ID: cbd65403cef9b11c15029e318a08a739
+	at CRM.Test.FormsTest.BankruptcyPayments(FormsTest.java:277)
+
+FillingTheNotices(CRM.Test.FormsTest)  Time elapsed: 1.306 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li _ngcontent-lax-c6="" class="list-group-item d-flex justify-content-between align-items-center ng-star-inserted" data-action="notices">...</li> is not clickable at point (527, 691). Other element would receive the click: <modal-container class="modal fade show" role="dialog" tabindex="-1" style="display: block;" aria-modal="true">...</modal-container>
+  (Session info: chrome=96.0.4664.45)
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'DESKTOP-H2D1FUP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cbd65403cef9b11c15029e318a08a739, clickElement {id=e2cb2591-df31-45d5-b544-fa7c1eb1563e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Evy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60534/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cbd65403cef9b11c15029e318a08a739)] -> css selector: .list-group-item]
+Session ID: cbd65403cef9b11c15029e318a08a739
+	at CRM.Test.FormsTest.FillingTheNotices(FormsTest.java:289)
+
+OrderFiltrationInBankruptcyAll(CRM.Test.FormsTest)  Time elapsed: 7.131 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at CRM.Test.FormsTest.OrderFiltrationInBankruptcyAll(FormsTest.java:309)
+
+BankruptcyOrderFiltrationInAllOrders(CRM.Test.FormsTest)  Time elapsed: 9.596 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at CRM.Test.FormsTest.BankruptcyOrderFiltrationInAllOrders(FormsTest.java:326)
+
