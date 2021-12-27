@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests">
+    <test name="LK" parallel = "classes" thread-count = "1">
+
+        <parameter name="driverName" value="Chrome"></parameter>
+
+        <classes>
+<!--            <class name="LK.Test.LoginTest"/>-->
+<!--            <class name="LK.Test.MyProfileTest"/>-->
+        </classes>
+    </test>
+
+    <test name="CRM" parallel = "classes" thread-count = "1">
+
+        <parameter name="driverName" value="Chrome"></parameter>
+
+        <classes>
+<!--            <class name="CRM.Test.LoginTest"/>-->
+<!--            <class name="CRM.Test.API"/>-->
+            <class name="CRM.Test.FormsTest"/>
+        </classes>
+    </test>
+</suite>
