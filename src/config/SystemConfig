@@ -1,0 +1,4 @@
+Settings:
+    Chrome:
+        webdriver: chromedriver.exe
+        path: R:\Work\Sovzachita\chromedriver.exe
